@@ -1,11 +1,15 @@
 var nav1 = document.createElement("nav")
 document.body.appendChild(nav1)
 var a1 = document.createElement("a")
-a1.textContent = "https://www.mockplus.com/blog/post/bootstrap-navbar-template"
+a1.href = "https://www.mockplus.com/blog/post/bootstrap-navbar-template"
+a1.textContent = 'link '
 var a2 = document.createElement("a")
-a2.textContent = "https://colorlib.com/wp/bootstrap-navbar/"
+a2.href = "https://colorlib.com/wp/bootstrap-navbar/"
+a2.textContent = 'link '
 var a3 = document.createElement("a")
-a3.textContent = "https://designmodo.com/bootstrap-navbar/"
+a3.href = "https://designmodo.com/bootstrap-navbar/"
+a3.textContent = 'link '
+nav1.append(a1, a2, a3)
 
 var h1 = document.createElement("h1")
 document.body.appendChild(h1)
