@@ -4,12 +4,12 @@ var motorcycles = ['harley',
                 'yamaha',
                 'indian'
             ]
-var motorcycleList = document.getElementById("motorcycle")
-console.log(motorcycleList)
+
+
 for(var i = 0; i < motorcycles.length; i++){
     var newName = document.createElement('h2')
 newName.textContent = motorcycles[i]
-motorcycleList.append(newName)
+document.body.append(newName)
 
 newName.style.fontSize="20px"
 newName.style.fontWeight="lighter"
