@@ -8,10 +8,11 @@ for (let i = 0; i < 10; i ++) {
     document.body.appendChild(ele);
 }
 
-const array = ['steve', 'larry', 'joe', 'shirley', 'steph', 'nate', 'rick', 'emily']
-array.forEach(function(item) {
-    var li = document.createElement("li");
-    var text = document.createTextNode(item);
-    li.appendChild(text);
-    document.getElementById("myUl").appendChild(li);
-  });
+const names = ['steve', 'larry', 'joe', 'shirley', 'steph', 'nate', 'rick', 'emily']
+
+  
+  for (let i = 0; i < names.length; i ++) {
+    const ele = document.createElement("h1");
+    ele.innerHTML = names[i];
+    document.body.appendChild(ele);
+  }
