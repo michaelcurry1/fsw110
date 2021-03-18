@@ -15,130 +15,67 @@ window.addEventListener('load' , (event)=> {
 });
 
 div.addEventListener('mouseover' , function(event) {
-    div.style.backgroundColor = 'green'
+    div.style.backgroundColor = 'blue'
 
 });
 
 div.addEventListener('mousedown' , function(event) {
-    div.style.backgroundColor = 'yellow'
+    div.style.backgroundColor = 'red'
 });
 
 div.addEventListener('mouseup' , function(event){
-    div.style.backgroundColor = 'blue'
+    div.style.backgroundColor = 'yellow'
 });
 
 div.addEventListener('dblclick' , function (event) {
-    div.style.backgroundColor = "red"
+    div.style.backgroundColor = "green"
 });
 
-div.addEventListener('mousemove' ,function(){
-    div.style.backgroundColor = 'purple'
+div.addEventListener('scroll' ,function(event){
+    div.style.backgroundColor = 'orange'
 });
 
-var motorcycles = ['harley',
-                'suzuki',
-                'honda',
-                'yamaha',
-                'indian'
-            ]
+//document.onkeydown = function() {
+    //var keyCode = window.event ? window.event.keyCode : event.which;
+    //color(keyCode);
+//}
 
+//div.addEventListener("keyCode",function(event) {
+    //div.style.backgroundColor == "r"== 82;
+//})
+//function color(keycode){
+   // If (keycode === 82)}
+   // div.style.backgroundColor = "red";
 
-for(var i = 0; i < motorcycles.length; i++){
-    var newName = document.createElement('h2')
-newName.textContent = motorcycles[i]
-document.body.append(newName)
+   document.addEventListener("keydown", function(event) {
+    var x = event.key;
+    console.log(event.key);
+    if (x=="o")
+    {
+        div.style.backgroundColor = 'orange'
+    }
+  
+    if (x=="r")
+    {
+        div.style.backgroundColor = 'red'
+    }
+    if (x=="b")
+    {
+        div.style.backgroundColor = 'blue'
+    }
+    if (x=="g")
+    {
+        div.style.backgroundColor = 'green'
+    }
 
-newName.style.fontSize="20px"
-newName.style.fontWeight="lighter"
-newName.style.fontFamily="sans-serif"
-newName.style.color="cornflowerblue"
+          if (x=="y")
+    {
+        div.style.backgroundColor = 'yellow'
+    }
+    if (x=="p")
+    {
+        div.style.backgroundColor = 'purple'
+    }
 
+  })
 
-
-newName.classList.add("border")
-
-
-
-
-}
-
-var motorcycles = ['harley',
-                'suzuki',
-                'honda',
-                'yamaha',
-                'indian'
-            ]
-
-
-for(var i = 0; i < motorcycles.length; i++){
-    var newName = document.createElement('h2')
-newName.textContent = motorcycles[i]
-document.body.append(newName)
-
-newName.style.fontSize="20px"
-newName.style.fontWeight="lighter"
-newName.style.fontFamily="sans-serif"
-newName.style.color="cornflowerblue"
-
-
-
-newName.classList.add("border")
-
-
-
-
-}
-
-var motorcycles = ['harley',
-                'suzuki',
-                'honda',
-                'yamaha',
-                'indian'
-            ]
-
-
-for(var i = 0; i < motorcycles.length; i++){
-    var newName = document.createElement('h2')
-newName.textContent = motorcycles[i]
-document.body.append(newName)
-
-newName.style.fontSize="20px"
-newName.style.fontWeight="lighter"
-newName.style.fontFamily="sans-serif"
-newName.style.color="cornflowerblue"
-
-
-
-newName.classList.add("border")
-
-
-
-
-}
-
-var motorcycles = ['harley',
-                'suzuki',
-                'honda',
-                'yamaha',
-                'indian'
-            ]
-
-
-for(var i = 0; i < motorcycles.length; i++){
-    var newName = document.createElement('h2')
-newName.textContent = motorcycles[i]
-document.body.append(newName)
-
-newName.style.fontSize="20px"
-newName.style.fontWeight="lighter"
-newName.style.fontFamily="sans-serif"
-newName.style.color="cornflowerblue"
-
-
-
-newName.classList.add("border")
-
-
-
-
-}
