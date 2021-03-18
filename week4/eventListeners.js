@@ -31,7 +31,7 @@ div.addEventListener('dblclick' , function (event) {
     div.style.backgroundColor = "green"
 });
 
-div.addEventListener('scroll' ,function(event){
+div.addEventListener('wheel' ,function(event){
     div.style.backgroundColor = 'orange'
 });
 
