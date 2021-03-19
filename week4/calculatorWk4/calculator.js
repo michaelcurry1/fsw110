@@ -14,7 +14,3 @@ ans.textContent = x
 
 
 });
-
-
-
-
